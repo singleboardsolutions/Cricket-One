@@ -1034,7 +1034,7 @@ MISO
 Text GLabel 5750 2550 2    50   Input ~ 0
 SCK
 Text Notes 7600 7000 0    50   ~ 0
-Copyright Single Board Solutions 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-W v2\nYou may redistribute and modify this documentation and make products using it \nunder the terms of the CERN-OHL-W v2 (https:/cern.ch/cern-ohl). This \ndocumentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, \nINCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions.\n\nSource location: https://github.com/singleboardsolutions/cricket-one\n\nAs per CERN-OHL-W v2 section 4.1, should You produce hardware based on these\nsources, You must maintain the Source Location visible on the product you make \nusing this documentation.
+Copyright Single Board Solutions 2020.\nThis source describes Open Hardware and is licensed under the CERN-OHL-W v2\nYou may redistribute and modify this documentation and make products using it \nunder the terms of the CERN-OHL-W v2 (https:/cern.ch/cern-ohl). This \ndocumentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, \nINCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions.\n\nSource location: https://github.com/singleboardsolutions/cricket-one\n\nAs per CERN-OHL-W v2 section 4.1, should You produce hardware based on these\nsources, You must maintain the Source Location visible in the documentation of the \nproduct you make using this documentation.
 Text GLabel 8350 4450 0    50   Input ~ 0
 SDA
 Text GLabel 10450 4450 2    50   Input ~ 0
