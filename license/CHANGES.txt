@@ -1,0 +1,10 @@
+CHANGES.txt
+
+Copyright 2020 Single Board Solutions LLC
+
+This file holds changes from original licensed versions per CERN OHL v2
+(see section 3.3.b of CERN-OHL-W v2)
+
+Information may be added to this file, but not removed from it.
+
+2020.04.14:  Initial design release
