@@ -1242,10 +1242,21 @@ L Connector:Conn_01x01_Female J5
 U 1 1 5F558C48
 P 4350 7600
 F 0 "J5" H 4378 7626 50  0000 L CNN
-F 1 "Logo cheater " H 4378 7535 50  0000 L CNN
+F 1 "Logo cricket" H 4378 7535 50  0000 L CNN
 F 2 "footprints:Logo" H 4350 7600 50  0001 C CNN
 F 3 "~" H 4350 7600 50  0001 C CNN
 	1    4350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5F3A8DEF
+P 4350 7400
+F 0 "J6" H 4378 7426 50  0000 L CNN
+F 1 "Logo OSH" H 4378 7335 50  0000 L CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 4350 7400 50  0001 C CNN
+F 3 "~" H 4350 7400 50  0001 C CNN
+	1    4350 7400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
