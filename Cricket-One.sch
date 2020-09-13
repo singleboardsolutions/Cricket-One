@@ -796,15 +796,15 @@ F 3 "~" H 7300 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J4
+L Connector:Conn_01x02_Male J4
 U 1 1 5EB40CDA
 P 3350 3150
-F 0 "J4" H 3458 3331 50  0000 C CNN
+F 0 "J4" H 3650 3100 50  0000 C CNN
 F 1 "Reset" H 3458 3240 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3350 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3350 3150 50  0001 C CNN
 F 3 "~" H 3350 3150 50  0001 C CNN
 	1    3350 3150
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3150 3150 3150 2900
@@ -1017,8 +1017,8 @@ Wire Wire Line
 	10450 5050 10350 5050
 Text Notes 8500 650  0    50   ~ 0
 Revision
-Text Notes 8700 1100 0    50   ~ 0
-2020.04.13 - Initial release\n2020.08.15 - Update for manufacturing\n        - Remove resonator (internal OSC)\n        - Use GPIOs to complete RPi header\n        - Add TX/RX LED's
+Text Notes 8500 1350 0    50   ~ 0
+2020.04.13 - Initial release\n2020.08.15 - Update for manufacturing\n        - Remove resonator (internal OSC)\n        - Use GPIOs to complete RPi header\n        - Add TX/RX LED's\n2020.09.13\n        - Arrange components more logically\n        - Put header pins on 0.1" grid for easier proto board use
 $Comp
 L Device:LED D1
 U 1 1 5EE37770
@@ -1096,52 +1096,30 @@ $Comp
 L Device:LED D4
 U 1 1 5F3B531E
 P 1350 4650
-F 0 "D4" V 1389 4533 50  0000 R CNN
-F 1 "LED" V 1298 4533 50  0000 R CNN
+F 0 "D4" V 1300 4850 50  0000 R CNN
+F 1 "LED" V 1400 4900 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1350 4650 50  0001 C CNN
 F 3 "~" H 1350 4650 50  0001 C CNN
 	1    1350 4650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1350 4500 1350 4400
-$Comp
-L power:GND #PWR0103
-U 1 1 5F3B5329
-P 1350 4900
-F 0 "#PWR0103" H 1350 4650 50  0001 C CNN
-F 1 "GND" H 1355 4727 50  0000 C CNN
-F 2 "" H 1350 4900 50  0001 C CNN
-F 3 "" H 1350 4900 50  0001 C CNN
-	1    1350 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 4900 1350 4800
 $Comp
 L Device:LED D3
 U 1 1 5F3BCC1C
 P 1000 4650
-F 0 "D3" V 1039 4533 50  0000 R CNN
-F 1 "LED" V 948 4533 50  0000 R CNN
+F 0 "D3" V 950 4850 50  0000 R CNN
+F 1 "LED" V 1050 4900 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 1000 4650 50  0001 C CNN
 F 3 "~" H 1000 4650 50  0001 C CNN
 	1    1000 4650
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1000 4500 1000 4400
-$Comp
-L power:GND #PWR0104
-U 1 1 5F3BCC27
-P 1000 4900
-F 0 "#PWR0104" H 1000 4650 50  0001 C CNN
-F 1 "GND" H 1005 4727 50  0000 C CNN
-F 2 "" H 1000 4900 50  0001 C CNN
-F 3 "" H 1000 4900 50  0001 C CNN
-	1    1000 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 4900 1000 4800
 Wire Notes Line
@@ -1171,8 +1149,6 @@ F 3 "~" H 650 4250 50  0001 C CNN
 	1    650  4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	650  3800 650  3850
 $Comp
 L Device:LED D2
 U 1 1 5F475916
@@ -1212,19 +1188,6 @@ F 3 "" H 650 3800 50  0001 C CNN
 $EndComp
 Text Notes 550  5400 0    50   ~ 0
 LED's\n        -Typical Power/TX/RX, \n         and Arduino Pin 13 (SCK)
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5F48D740
-P 650 3950
-F 0 "JP1" V 604 4024 50  0000 L CNN
-F 1 "jmp" V 695 4024 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 650 3950 50  0001 C CNN
-F 3 "~" H 650 3950 50  0001 C CNN
-	1    650  3950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	650  4100 650  4050
 Text Notes 2300 3950 0    50   ~ 0
 I2C pull-ups\n        - Not strictly necessary, however \n        many Pi hats do not include them \n        because the Pi has them
 Text Notes 650  2050 0    50   ~ 0
@@ -1259,4 +1222,43 @@ F 3 "~" H 4350 7400 50  0001 C CNN
 	1    4350 7400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5F54497B
+P 1350 4900
+F 0 "#PWR0103" H 1350 4750 50  0001 C CNN
+F 1 "+3V3" H 1365 5073 50  0000 C CNN
+F 2 "" H 1350 4900 50  0001 C CNN
+F 3 "" H 1350 4900 50  0001 C CNN
+	1    1350 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5F544985
+P 1000 4900
+F 0 "#PWR0104" H 1000 4750 50  0001 C CNN
+F 1 "+3V3" H 1015 5073 50  0000 C CNN
+F 2 "" H 1000 4900 50  0001 C CNN
+F 3 "" H 1000 4900 50  0001 C CNN
+	1    1000 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	650  3800 650  4100
+$Comp
+L power:GND #PWR0107
+U 1 1 5F625525
+P 3100 3300
+F 0 "#PWR0107" H 3100 3050 50  0001 C CNN
+F 1 "GND" H 3105 3127 50  0000 C CNN
+F 2 "" H 3100 3300 50  0001 C CNN
+F 3 "" H 3100 3300 50  0001 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3250 3100 3250
+Wire Wire Line
+	3100 3250 3100 3300
 $EndSCHEMATC
