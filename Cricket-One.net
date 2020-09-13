@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\KiCad\Cricket-One\Cricket-One.sch)
-    (date "9/13/2020 12:51:01 PM")
+    (date "9/13/2020 4:08:29 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -43,7 +43,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5E7D3ED7))
     (comp (ref U3)
-      (value AP1117-33)
+      (value AP2114H-3.3TRG1)
       (footprint Package_TO_SOT_SMD:SOT-223-3_TabPin2)
       (datasheet http://www.diodes.com/datasheets/AP1117.pdf)
       (libsource (lib Regulator_Linear) (part AP1117-33) (description "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"))
